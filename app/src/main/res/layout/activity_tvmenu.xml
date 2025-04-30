@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TVMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="32dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <include
+                layout="@layout/logo_mini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="8dp"
+                android:text="@string/tv_control_text" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="horizontal">
+
+                        <include
+                            layout="@layout/tv_logo_mini"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="8dp"
+                            android:text="@string/tv_logo_mini_text" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nowifi"
+                        android:layout_marginVertical="32dp" />
+
+                </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:orientation="horizontal">
+
+                       <Button
+                           android:id="@+id/on_tv_button"
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_marginHorizontal="4dp"
+                           android:text="@string/on_tv_button" />
+
+                       <Button
+                           android:id="@+id/off_tv_button"
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_marginHorizontal="4dp"
+                           android:text="@string/off_tv_button" />
+
+                       <Button
+                           android:id="@+id/connect_tv_button"
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_marginHorizontal="4dp"
+                           android:text="@string/connect_tv_button" />
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:orientation="horizontal">
+
+                       <Button
+                           android:id="@+id/cinema_tv_button"
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_marginHorizontal="4dp"
+                           android:text="@string/cinema_tv_button" />
+
+                       <Button
+                           android:id="@+id/va_tv_button"
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_marginHorizontal="4dp"
+                           android:text="@string/va_tv_button" />
+
+                       <Button
+                           android:id="@+id/internet_tv_button"
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_marginHorizontal="4dp"
+                           android:textSize="11sp"
+                           android:text="@string/internet_tv_button" />
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:orientation="horizontal">
+
+                       <Button
+                           android:id="@+id/browser_tv_button"
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_marginHorizontal="4dp"
+                           android:textSize="13sp"
+                           android:text="@string/browser_tv_button" />
+
+                       <Button
+                           android:id="@+id/youtube_tv_button"
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_marginHorizontal="4dp"
+                           android:textSize="13sp"
+                           android:text="@string/youtube_tv_button" />
+
+                       <Button
+                           android:id="@+id/volume_tv_button"
+                           android:layout_width="100dp"
+                           android:layout_height="100dp"
+                           android:layout_marginHorizontal="4dp"
+                           android:textSize="10sp"
+                           android:text="@string/volume_tv_button" />
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/button_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginVertical="32dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
